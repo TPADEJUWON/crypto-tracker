@@ -335,7 +335,7 @@ This project is open source and available under the [MIT License](LICENSE).
 
 - GitHub: [@TPADEJUWON](https://github.com/TPADEJUWON)
 - Email: tosin0601@gmail.com
-- Portfolio: _[Your portfolio link]_
+- Portfolio: [Portfolio](https://portfolio-umber-two-42.vercel.app/)
 - LinkedIn: https://www.linkedin.com/in/tosin-adejuwon-08507b110/
 
 ## 🙏 Acknowledgments
