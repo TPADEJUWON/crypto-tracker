@@ -24,11 +24,13 @@ A professional cryptocurrency tracking application featuring live prices, portfo
 
 ## 🚀 Live Demo
 
-[View Live Demo](https://your-crypto-tracker.vercel.app) *(Add your deployment link)*
+[View Live Demo](https://crypto-tracker-theta-drab.vercel.app/)
 
 ## 📸 Screenshots
 
-*Add screenshots of your application*
+![The interface](image.png)
+![The cryptocurrencies](image-1.png)
+![Mobile view](image-2.png)
 
 ```
 Suggested screenshots:
@@ -43,16 +45,19 @@ Suggested screenshots:
 ## 🛠️ Built With
 
 **Frontend:**
+
 - **React** - UI library with Hooks
 - **Recharts** - Data visualization library
 - **Tailwind CSS** - Modern styling framework
 - **Lucide React** - Beautiful icons
 
 **API Integration:**
+
 - **CoinGecko API** - Real-time cryptocurrency data
 - **Fetch API** - Async data fetching
 
 **Storage:**
+
 - **LocalStorage** - Persistent favorites and portfolio
 
 ## 📦 Installation & Setup
@@ -66,17 +71,20 @@ Suggested screenshots:
 ### Step-by-Step Setup
 
 1. **Clone the repository**
+
 ```bash
 git clone https://github.com/TPADEJUWON/crypto-tracker.git
 cd crypto-tracker
 ```
 
 2. **Install dependencies**
+
 ```bash
 npm install
 ```
 
 3. **Install required packages**
+
 ```bash
 npm install lucide-react recharts
 npm install -D tailwindcss@3.4.17 postcss autoprefixer
@@ -86,20 +94,20 @@ npx tailwindcss init -p
 4. **Configure Tailwind CSS**
 
 Update `tailwind.config.js`:
+
 ```javascript
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./src/**/*.{js,jsx,ts,tsx}",
-  ],
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {},
   },
   plugins: [],
-}
+};
 ```
 
 Update `src/index.css`:
+
 ```css
 @tailwind base;
 @tailwind components;
@@ -107,27 +115,31 @@ Update `src/index.css`:
 ```
 
 5. **Start development server**
+
 ```bash
 npm start
 ```
 
 6. **Open your browser**
-Navigate to `http://localhost:3000`
+   Navigate to `http://localhost:3000`
 
 ## 📖 How to Use
 
 ### Tracking Cryptocurrencies
+
 1. **Browse List**: View top 100 cryptocurrencies by market cap
 2. **Search**: Type coin name or symbol to filter
 3. **Sort**: Change sorting (Market Cap, Price, 24h Change)
 4. **Refresh**: Click refresh button for latest prices
 
 ### Managing Favorites
+
 1. Click the **star icon** next to any cryptocurrency
 2. View all favorites in the **"Your Favorites"** section
 3. Quick access to coins you track most
 
 ### Portfolio Management
+
 1. Click **"Add to Portfolio"** button
 2. Select cryptocurrency from dropdown
 3. Enter amount of coins you own
@@ -135,6 +147,7 @@ Navigate to `http://localhost:3000`
 5. View real-time profit/loss calculations
 
 ### Understanding the Data
+
 - **Price**: Current USD price per coin
 - **24h Change**: Price change in last 24 hours
 - **Market Cap**: Total value of all coins in circulation
@@ -168,9 +181,9 @@ crypto-tracker/
 // Fetch live cryptocurrency data
 const fetchCryptos = async () => {
   const response = await fetch(
-    'https://api.coingecko.com/api/v3/coins/markets?' +
-    'vs_currency=usd&order=market_cap_desc&per_page=100&' +
-    'sparkline=true&price_change_percentage=1h,24h,7d'
+    "https://api.coingecko.com/api/v3/coins/markets?" +
+      "vs_currency=usd&order=market_cap_desc&per_page=100&" +
+      "sparkline=true&price_change_percentage=1h,24h,7d"
   );
   const data = await response.json();
   setCryptos(data);
@@ -188,12 +201,14 @@ const profitPercent = ((profit / invested) * 100).toFixed(2);
 ```
 
 ### ⭐ Favorites System
+
 - Persistent across sessions
 - Quick access panel
 - Visual star indicators
 - Easy toggle on/off
 
 ### 📈 Market Statistics
+
 - **Total Market Cap**: Combined value of all cryptocurrencies
 - **Average 24h Change**: Market trend indicator
 - **Gainers**: Coins with positive price movement
@@ -202,6 +217,7 @@ const profitPercent = ((profit / invested) * 100).toFixed(2);
 ## 💡 What I Learned
 
 This project taught me:
+
 - Working with real-time financial APIs
 - Complex state management with portfolios
 - Data transformation and calculations
@@ -233,6 +249,7 @@ Planned features:
 ## 🌐 API Information
 
 ### CoinGecko API
+
 - **Base URL**: `https://api.coingecko.com/api/v3`
 - **Rate Limit**: 50 calls/minute (free tier)
 - **Cost**: Completely free, no API key required
@@ -256,6 +273,7 @@ GET /coins/markets
 ### Deploy to Vercel
 
 1. **Push to GitHub**
+
 ```bash
 git add .
 git commit -m "Initial commit"
@@ -263,12 +281,14 @@ git push origin main
 ```
 
 2. **Deploy on Vercel**
+
 - Visit [vercel.com](https://vercel.com)
 - Import your GitHub repository
 - Vercel auto-detects React settings
 - Click Deploy
 
 3. **Custom Domain** (Optional)
+
 - Add custom domain in Vercel dashboard
 - Update DNS settings
 
@@ -312,10 +332,11 @@ This project is open source and available under the [MIT License](LICENSE).
 ## 👨‍💻 Author
 
 **Tosin Adejuwon**
+
 - GitHub: [@TPADEJUWON](https://github.com/TPADEJUWON)
 - Email: tosin0601@gmail.com
-- Portfolio: *[Your portfolio link]*
-- LinkedIn: *[Your LinkedIn profile]*
+- Portfolio: _[Your portfolio link]_
+- LinkedIn: https://www.linkedin.com/in/tosin-adejuwon-08507b110/
 
 ## 🙏 Acknowledgments
 
@@ -328,6 +349,7 @@ This project is open source and available under the [MIT License](LICENSE).
 ## ⚠️ Disclaimer
 
 **Investment Warning:**
+
 - This app is for educational purposes only
 - Not financial advice
 - Cryptocurrency investments are highly risky
@@ -354,6 +376,7 @@ This project is open source and available under the [MIT License](LICENSE).
 ## 📞 Support
 
 Need help?
+
 - Open an issue on GitHub
 - Email: tosin0601@gmail.com
 - Check CoinGecko API status
